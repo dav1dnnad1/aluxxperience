@@ -15,7 +15,7 @@
   .navbar {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+   
     align-items: center;
     padding: 1.2rem 5%;
     position: fixed;
@@ -41,7 +41,7 @@
     cursor: pointer;
     color: #000;
     margin-top: 0.5rem;
-    margin-right: auto;
+    
   }
   
   .nav-menu {
