@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 0.5rem;
+    align-items: center;
+  }
+  
+  .hamburger {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    margin-top: 0.5rem;
+  }
+  
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    color: #555;
+  }
+  
+  @media (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+  
+    .nav-menu {
+      display: flex !important;
+      flex-direction: row;
+      gap: 2rem;
+      margin-top: 0;
+    }
+  
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .nav-menu {
+        display: flex !important;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 0;
+      }
+    
+      .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      
+      .nav-menu a.active {
+          font-weight: bold;
+          color: #555;
+        }
+    
+      .logo {
+        margin: 0;
+      }
+  
+    .logo {
+      margin: 0;
+    }
+  }
+  
+  /* Push body content down */
+  body {
+    padding-top: 155px;
+    
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Section Title */
+  .services-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Layout */
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  /* Each service card */
+  .service-card {
+    width: 300px;
+    background: #fafafa;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image box with hover image switch */
+  .service-img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    background-image: var(--img1);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease, transform 0.4s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .service-img:hover {
+    background-image: var(--img2);
+    transform: scale(1.05) rotate(-1deg);
+  }
+  
+  /* Title */
+  .service-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Description */
+  .service-card p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  /* Book Now Button */
+  .book-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .book-btn:hover {
+    background-color: #555;
+    transform: scale(1.1);
+  }
+   .footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 5%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .footer-content p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .footer-content a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-content a:hover {
+    color: #fff;
+  }
+  
+  .footer-copy {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  .footer-container img {
+  width: 16px;
+  height: 16px;
+}
+.footer-hours {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.footer-text {
+  font-size: 0.85rem;
+  color: #999;
+}

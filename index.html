@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Luxe Xperience</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <img src="logo 2.jpg" alt="alx.png" class="logo" />
+    <button class="hamburger" id="menuToggle">&#9776;</button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html" class = "active">Home</a>
+      <a href="services.html">Services</a>
+     
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-slideshow">
+    <div class="hero-content">
+      <h1>Where Hairstyling Meets Art</h1>
+      <p>Rooted in tradition. Styled for the now.</p>
+      <a class="btn" href="services.html">Book Your Style</a>
+    </div>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="image-gallery">
+    <div class="gallery-grid">
+      <img src="IMG-20250625-WA0049.jpg" alt="Braids style 1" />
+      <img src="IMG-20250625-WA0054.jpg" alt="Braids style 2" />
+      <img src="IMG-20250625-WA0053.jpg" alt="Braids style 3" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>About A Luxe Xperience</h2>
+    <p>
+      At A Luxe Xperience, we specialise in braiding hair that celebrates
+      culture, identity, and individual beauty. Whether you want clean box braids,
+      intricate cornrows, or protective twists — our passion is in every part and braid.
+      Based in Newcastle, we’re all about precision, professionalism, and preserving
+      the beauty of all hair types.
+    </p>
+  </section>
+
+  <main style="padding: 150px 20px 40px;">
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you — reach out with questions, bookings, or feedback.</p>
+
+      <form class="contact-form" action="https://formspree.io/f/xzzgkonb" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <input type="hidden" name="_redirect" value="thank-you.html" />
+      </form>
+    </section>
+  </main>
+ <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-hours">
+    <p><strong>Opening Hours:</strong></p>
+    <p>Mon – Sat: 9am – 7pm</p>
+    <p>Sunday: Closed</p>
+  </div>
+      <div class="footer-content">
+        <p><img src="OIP (1).webp" alt="Email"> <a href="tel:+2348012345678">+44 7383412321</a></p>
+        <p><img src="OIP.webp" alt="Email"> <a href="mailto:aluxexperience@gmail.com">aluxexperience@gmail.com</a></p>
+        <p><img src="download.webp" alt="Email"> <a href="https://www.instagram.com/aluxexperience_" target="_blank">@aluxexperience_</a></p>
+      </div>
+      <p class="footer-copy">&copy; 2025 A Luxe Xperience. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
