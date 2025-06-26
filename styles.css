@@ -12,10 +12,10 @@
   }
   
   /* Navbar */
+ /* Navbar */
   .navbar {
     display: flex;
     flex-direction: column;
-  
     align-items: center;
     padding: 1.2rem 5%;
     position: fixed;
@@ -41,7 +41,6 @@
     cursor: pointer;
     color: #000;
     margin-top: 0.5rem;
-    
   }
   
   .nav-menu {
@@ -62,6 +61,7 @@
   .nav-menu a:hover {
     color: #555;
   }
+  
   
   /* Hero Section */
   
