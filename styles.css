@@ -27,7 +27,7 @@
 
 /* Make logo always stay on the left */
 .logo {
-  width: 90px;
+  width: 70px;
   height: auto;
   margin-right: auto;
 }
@@ -182,13 +182,20 @@
     animation: bgSlideshow 20s infinite ease-in-out;
     background-image: url('bg1.jpg');
   }
-  
+
   @keyframes bgSlideshow {
-    0%    { background-image: url('IMG-20250625-WA0035.jpg'); }
-    33%   { background-image: url('IMG-20250625-WA0027.jpg'); }
-    66%   { background-image: url('IMG-20250625-WA0030.jpg'); }
-    100%  { background-image: url('IMG-20250625-WA0031.jpg'); }
-  }
+  0%    { background-image: url('IMG-20250625-WA0057.jpg'); }
+  10%   { background-image: url('IMG-20250625-WA0056.jpg'); }
+  20%   { background-image: url('IMG-20250625-WA0055.jpg'); }
+  30%   { background-image: url('IMG-20250625-WA0052.jpg'); }
+  40%   { background-image: url('IMG-20250625-WA0050.jpg'); }
+  50%   { background-image: url('IMG-20250625-WA0047.jpg'); }
+  60%   { background-image: url('IMG-20250625-WA0046.jpg'); }
+  70%   { background-image: url('IMG-20250625-WA0043.jpg'); }
+  80%   { background-image: url('IMG-20250625-WA0045.jpg'); }
+  90%   { background-image: url('IMG-20250625-WA0046.jpg'); }
+  100%  { background-image: url('IMG-20250625-WA0057.jpg'); } /* Loop back */
+}
   
   /* 🔳 Overlay for better readability */
   body::after {
