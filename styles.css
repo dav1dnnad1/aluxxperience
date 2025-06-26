@@ -12,54 +12,72 @@
   }
   
   /* Navbar */
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.2rem 5%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 1000;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .logo {
-    width: 120px;
-    height: auto;
-    margin-bottom: 0.5rem;
-    align-items: center;
-  }
-  
-  /* Hamburger Button */
-  .hamburger {
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #000;
-    margin-top: 0.5rem;
-  }
-  
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
-  .nav-menu a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-menu a:hover {
-    color: #555;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+/* Make logo always stay on the left */
+.logo {
+  width: 90px;
+  height: auto;
+  margin-right: auto;
+}
+
+/* Hamburger on mobile - right side */
+.hamburger {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  display: block;
+  z-index: 1100;
+  margin-left: auto;
+}
+
+/* Mobile Menu */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 1rem 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.nav-menu.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #555;
+}
   
   /* Hero Section */
   
@@ -120,32 +138,36 @@
   }
   
   /* Responsive */
-  @media (min-width: 768px) {
-    .hamburger {
-      display: none;
-    }
-  
-    .nav-menu {
-      display: flex !important;
-      flex-direction: row;
-      gap: 2rem;
-      margin-top: 0;
-    }
-  
-    .navbar {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    .nav-menu a.active {
-        font-weight: bold;
-        color: #555;
-      }
-  
-    .logo {
-      margin: 0;
-    }
+ @media (min-width: 768px) {
+  .hamburger {
+    display: none;
   }
+
+  .nav-menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 2rem;
+    background: none;
+    opacity: 1 !important;
+    pointer-events: auto;
+    transform: none;
+  }
+  .nav-menu a.active {
+          font-weight: bold;
+          color: #555;
+        }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}
   body::before {
     content: "";
     position: fixed;

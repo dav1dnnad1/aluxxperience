@@ -29,6 +29,7 @@
   .logo {
     width: 120px;
     height: auto;
+    align-items: left;
   }
   
   .hamburger {
@@ -38,6 +39,7 @@
     cursor: pointer;
     color: #000;
     display: block;
+    align-items: right;
   }
   
   .nav-menu {
