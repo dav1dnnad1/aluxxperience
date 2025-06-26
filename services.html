@@ -7,24 +7,26 @@
   <link rel="stylesheet" href="services.css" />
   <link rel="icon" href="logo 2.jpg" type="image/x-icon">
   <script defer src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet" />
 </head>
 <body>
- <header class="navbar">
+  <!-- Navbar -->
+  <header class="navbar">
     <a href="index.html">
       <img src="logo 2.jpg" alt="A Luxe Xperience Logo" class="logo" />
     </a>
     <nav class="nav-menu" id="navMenu">
-      <a href="index.html" >Home</a>
+      <a href="index.html">Home</a>
       <a href="services.html" class="active">Services</a>
     </nav>
     <button class="hamburger" id="menuToggle">&#9776;</button>
   </header>
+
+  <!-- Services Section -->
   <section class="services-section">
     <h2>Services</h2>
     <div class="services-container">
-      
-      <!-- Service 1 -->
+
       <div class="service-card">
         <div class="service-img" style="--img1: url('IMG-20250625-WA0036.jpg'); --img2: url('IMG-20250625-WA0051.jpg');"></div>
         <h3>Braided Styles</h3>
@@ -32,7 +34,6 @@
         <a href="https://aluxexperience.square.site" class="book-btn">Book Now</a>
       </div>
 
-      <!-- Service 2 -->
       <div class="service-card">
         <div class="service-img" style="--img1: url('IMG-20250625-WA0048.jpg'); --img2: url('IMG-20250625-WA0034.jpg');"></div>
         <h3>Men's Hair</h3>
@@ -40,7 +41,6 @@
         <a href="https://aluxexperience.square.site" class="book-btn">Book Now</a>
       </div>
 
-      <!-- Service 3 -->
       <div class="service-card">
         <div class="service-img" style="--img1: url('wigs.jpg'); --img2: url('wig2.jpg');"></div>
         <h3>Wig Install</h3>
@@ -50,26 +50,29 @@
 
     </div>
   </section>
-   <footer class="footer">
+
+  <!-- Footer -->
+  <footer class="footer">
     <div class="footer-container">
-        <div class="footer-hours">
-    <p><strong>Opening Hours:</strong></p>
-    <p>Mon – Sat: 9am – 7pm</p>
-    <p>Sunday: Closed</p>
-  </div>
+      <div class="footer-hours">
+        <p><strong>Opening Hours:</strong></p>
+        <p>Mon – Sat: 9am – 7pm</p>
+        <p>Sunday: Closed</p>
+      </div>
       <div class="footer-content">
-        <p><img src="OIP (1).webp" alt="Email"> <a href="tel:+2348012345678">+44 7383412321</a></p>
+        <p><img src="OIP (1).webp" alt="Phone"> <a href="tel:+447383412321">+44 7383412321</a></p>
         <p><img src="OIP.webp" alt="Email"> <a href="mailto:aluxexperience@gmail.com">aluxexperience@gmail.com</a></p>
-        <p><img src="download.webp" alt="Email"> <a href="https://www.instagram.com/aluxexperience_" target="_blank">@aluxexperience_</a></p>
+        <p><img src="download.webp" alt="Instagram"> <a href="https://www.instagram.com/aluxexperience_" target="_blank">@aluxexperience_</a></p>
       </div>
       <p class="footer-copy">&copy; 2025 A Luxe Xperience. All rights reserved.</p>
     </div>
   </footer>
-  <script>
-  document.getElementById("menuToggle").addEventListener("click", function () {
-    document.getElementById("navMenu").classList.toggle("active");
-  });
-</script>
 
+  <!-- Hamburger Toggle Script -->
+  <script>
+    document.getElementById("menuToggle").addEventListener("click", function () {
+      document.getElementById("navMenu").classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
