@@ -48,17 +48,16 @@
 .nav-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: absolute;
   top: 100%;
   left: 0;
-  right: 0;
+  width: 100%;
   background-color: #fff;
-  padding: 1rem 0;
   opacity: 0;
   transform: translateY(-10px);
   pointer-events: none;
   transition: all 0.3s ease;
+  z-index: 999;
 }
 
 .nav-menu.active {
